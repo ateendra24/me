@@ -103,7 +103,7 @@
   }
   .wrappe ul li a{
     text-decoration: none;
-    font-size: 55px;
+    font-size: 70px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     letter-spacing: 2px;
@@ -120,6 +120,7 @@
 
   .wrappe ul li a:hover{
     -webkit-text-fill-color: white;
+    cursor: none;
   }
   input[type="checkbox"]{
     display: none;

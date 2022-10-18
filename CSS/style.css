@@ -406,7 +406,6 @@ section {
 }
 
 .home {
-  max-height: 760px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,6 +473,8 @@ section {
 
 .explore:hover {
   transform: translateY(-7px) scale(1.01);
+  cursor: none;
+
 }
 
 .home {
@@ -883,3 +884,36 @@ img{
   user-select: none;
   -webkit-user-drag: none;
 }
+<<<<<<< Updated upstream
+=======
+
+.thank{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 400px;
+}
+.thank p{
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-family: poppins;
+}
+.home_rtn{
+  background: linear-gradient(25deg, #0072FF 0%, #00C6FF 100%);
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 60px;
+  transition: all 0.3s ease;
+}
+.home_rtn:hover{
+  transform: translateY(-7px) scale(1.01);
+  cursor: none;
+}
+>>>>>>> Stashed changes
