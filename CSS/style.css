@@ -544,6 +544,8 @@ font-weight: 800;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  max-width: 400px;
 }
 
 .about_contact_button {
@@ -573,10 +575,8 @@ font-weight: 800;
 }
 
 .box2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   width: 100%;
-  max-width: 400px;
   color: white;
   text-align: center;
   display: flex;
@@ -584,7 +584,16 @@ font-weight: 800;
   align-items: center;
   flex-direction: column;
 }
-
+.ab_hidden{
+  opacity: 0;
+  transition: all 1s;
+  transform: translateY(50%);
+ }
+ .ab_show{
+  opacity: 1;
+  transform: translateX(0);
+ }
+ 
 
 
 /*******/
@@ -661,49 +670,50 @@ font-weight: 800;
   transition: all 300ms linear;
   transform: translateY(-7px) scale(1.01);
 }
-.hidden{
+.pro_hidden{
   opacity: 0;
   transition: all 1s;
   transform: translateX(-100%);
  }
- .show{
+ .pro_show{
   opacity: 1;
   transform: translateX(0);
  }
  
-.hidden:nth-child(2){
+.pro_hidden:nth-child(2){
   transition-delay: 200ms;
 }
-.hidden:nth-child(3){
+.pro_hidden:nth-child(3){
   transition-delay: 300ms;
 }
-.hidden:nth-child(4){
+.pro_hidden:nth-child(4){
   transition-delay: 400ms;
 }
-.hidden:nth-child(5){
+.pro_hidden:nth-child(5){
   transition-delay: 500ms;
 }
-.hidden:nth-child(6){
+.pro_hidden:nth-child(6){
   transition-delay:600ms;
 }
-.hidden:nth-child(7){
+.pro_hidden:nth-child(7){
   transition-delay: 700ms;
 }
-.hidden:nth-child(8){
-  transition-delay: 800ms;
+.pro_hidden:nth-child(8){
+  transition-delay: 700ms;
 }
-.hidden:nth-child(9){
-  transition-delay: 1000ms;
-}
-.hidden:nth-child(10){
-  transition-delay: 1200ms;
-}
-.hidden:nth-child(10){
-  transition-delay: 1500ms;
-}
+
 
 
 /*********/
+.co_hidden{
+  opacity: 0;
+  transition: all 2s ;
+
+ }
+ .co_show{
+  opacity: 1;
+
+ }
 
 .contact_heading {
   font-family: 'Nunito';
@@ -768,10 +778,10 @@ input[type=text] {
   transition: all 0.1s ease-in;
   font-family: "Nunito", sans-serif;
   font-size: 12px;
-  padding: 2px;
+  padding: 5px;
 }
 input[type=text]:focus{
-  padding: 4px;
+
   font-size: 11px;
 }
 textarea {
@@ -868,3 +878,7 @@ textarea {
 }
 
 
+img{
+  user-select: none;
+  -webkit-user-drag: none;
+}

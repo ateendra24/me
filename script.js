@@ -20,14 +20,42 @@ next();
 
 
 
-const observer= new IntersectionObserver((enteries)=> {
+const pro_observer= new IntersectionObserver((enteries)=> {
     enteries.forEach((entry) =>{
         console.log(entry)
         if (entry.isIntersecting){
-            entry.target.classList.add('show')
+            entry.target.classList.add('pro_show')
         }
     });
 });
 
-const hiddenElements= document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+const pro_hiddenElements= document.querySelectorAll('.pro_hidden');
+pro_hiddenElements.forEach((el) => pro_observer.observe(el));
+
+
+
+const ab_observer= new IntersectionObserver((enteries)=> {
+    enteries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('ab_show')
+        }
+    });
+});
+
+const ab_hiddenElements= document.querySelectorAll('.ab_hidden');
+ab_hiddenElements.forEach((el) => ab_observer.observe(el));
+
+
+const co_observer= new IntersectionObserver((enteries)=> {
+    enteries.forEach((entry) =>{
+        console.log(entry)
+        if (entry.isIntersecting){
+            entry.target.classList.add('co_show')
+        }
+    });
+});
+
+const co_hiddenElements= document.querySelectorAll('.co_hidden');
+co_hiddenElements.forEach((el) => co_observer.observe(el));
+
