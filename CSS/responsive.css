@@ -103,10 +103,7 @@
       height: 100vh;
       display: flex;
       font-family: 'Nunito', sans-serif;
-<<<<<<< Updated upstream
-=======
       min-height: 862px;
->>>>>>> Stashed changes
       max-height: 100%;
     }
   

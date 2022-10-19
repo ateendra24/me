@@ -884,8 +884,6 @@ img{
   user-select: none;
   -webkit-user-drag: none;
 }
-<<<<<<< Updated upstream
-=======
 
 .thank{
   display: flex;
@@ -916,4 +914,3 @@ img{
   transform: translateY(-7px) scale(1.01);
   cursor: none;
 }
->>>>>>> Stashed changes
