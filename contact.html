@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contact Me!</title>
+</head>
+
+<body>
+
+    <div class="headline">
+        <a href="index.html">
+            <svg style="padding-top:20px ;" width="81" height="81" viewBox="0 0 81 81" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M30.3752 41.6853L16.8752 29.0065L30.3752 16.3278M16.8752 29.0065H54.0002C57.5807 29.0065 61.0144 30.3423 63.5462 32.7201C66.0779 35.0978 67.5002 38.3227 67.5002 41.6853C67.5002 45.048 66.0779 48.2729 63.5462 50.6506C61.0144 53.0283 57.5807 54.3641 54.0002 54.3641H50.6252"
+                    stroke="#A3A3A3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        Contact Me!
+    </div>
+
+
+    <div class="content">
+
+        <div class="contact_left"> <b> Ready to work with me?</b> <br><br> Just fill these details below and <br> I will get back to you very soon!!</div>
+
+        <div class="contact_right">
+
+
+            <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+                <script type="text/javascript">
+                    function ValidateForm(frm) {
+                        if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+                        if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+                        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+                        if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+                        return true;
+                    }
+                </script>
+                <table class="contact_form" style="width:100%;max-width:550px;border:0; color: white;"
+                    cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td>
+                            <input placeholder="Your Name" name="Name" type="text" maxlength="60"
+                                style="width:100%;width:280px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input placeholder="Phone No." name="PhoneNumber" type="text" maxlength="43"
+                                style="width:100%;max-width:280px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input placeholder="E-mail Address" name="FromEmailAddress" type="text" maxlength="90"
+                                style="width:100%;max-width:280px;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea placeholder="Your Message" name="Comments" rows="2" cols="10"
+                                style="width:100%;max-width:280px;"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form_orginal" style="float:right"><a href="https://www.100forms.com"
+                                    id="lnk100" title="form to email">form to email</a></div>
+                            <input class="submit" name="skip_Submit" type="submit" value="Submit" />
+                            <script src="https://www.100forms.com/js/FORMKEY:SYMGDU6KYP5U/SEND:my@email.com"
+                                type="text/javascript"></script>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
