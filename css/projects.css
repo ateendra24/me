@@ -119,5 +119,9 @@ button {
     .part1{
        padding: 30%; 
     }
-    .part1,.part2{width: 100%;}
+    .part1,.part2{width: 100%;
+    }
+    .down{
+        display: none;
+    }
 }
