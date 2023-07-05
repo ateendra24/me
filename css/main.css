@@ -369,7 +369,7 @@ a {
     font-size: 1.6vw;
     font-weight: 400;
     padding: 3vw;
-    z-index: 6;
+    z-index: 2;
     left: -50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -382,7 +382,6 @@ a {
     transition: 0.7s ease-out;
     visibility: hidden;
     overflow: scroll;
-    display: none;
 }
 
 .close {

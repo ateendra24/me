@@ -47,9 +47,6 @@ button {
     margin: 0px auto;
 }
 
-.part1,
-.part2 {}
-
 .part1 {
     display: flex;
     justify-content: center;
