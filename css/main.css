@@ -365,11 +365,12 @@ a {
 
 
 #learn_more {
+    visibility: hidden;
     position: absolute;
     font-size: 1.6vw;
     font-weight: 400;
     padding: 3vw;
-    z-index: 2;
+    z-index: 6;
     left: -50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -380,7 +381,6 @@ a {
     backdrop-filter: blur(20px);
     border-radius: 10px;
     transition: 0.7s ease-out;
-    visibility: hidden;
     overflow: scroll;
 }
 
